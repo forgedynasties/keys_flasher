@@ -18,7 +18,7 @@ fi
 source venv/bin/activate
 pip install --upgrade pip
 pip install pyinstaller
-pyinstaller --onefile --name keys_flasher main.py
+pyinstaller --onefile --name keys_flasher --hidden-import PyQt5 --collect-all PyQt5 main.py
 
 BINARY="dist/keys_flasher"
 if [[ ! -f "$BINARY" ]]; then
@@ -65,7 +65,7 @@ for asset in app_icon.ico aio.png; do
 done
 
 # Install docs and extras
-cp FACTORY_PACKAGE.md "$PKG_DIR/usr/share/doc/keys_flasher/README_FACTORY.md"
+cp FACTORY_PACKAGE.md "$PKG_DIR/usr/share/doc/keys_flasher/README_FACTORY.md" 2>/dev/null || true
 cp run.sh "$PKG_DIR/usr/share/doc/keys_flasher/run.sh" 2>/dev/null || true
 
 # Postinst: ensure logs dir and run permissions
