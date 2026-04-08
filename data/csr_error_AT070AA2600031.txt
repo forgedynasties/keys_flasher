@@ -1,8 +1,0 @@
-Device Error: Attestation IDs are missing or malprovisioned.
---- TOOL OUTPUT ---
-Self test failed for IRemotelyProvisionedComponent 'default'. Error message: 'device is missing.
-Attestation IDs are missing or malprovisioned. If this test is being
-run against an early proto or EVT build, this error is probably WAI
-and indicates that Device IDs were not provisioned in the factory. If
-this error is returned on a DVT or later build revision, then
-something is likely wrong with the factory provisioning process.'.
