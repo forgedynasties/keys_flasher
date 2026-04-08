@@ -1,0 +1,84 @@
+=== Session Log - 2026-03-27T12:00:14.585273 ===
+2026-03-27T12:00:14.586004 Initializing Parallel Multi-Device Flash Process...
+2026-03-27T12:00:14.587219 [AT070AA2600020] --- Starting Multi-Device Flash Process ---
+2026-03-27T12:00:14.598461 [AT070AA2600020] Target devices captured at START FLASHING: 1
+2026-03-27T12:00:14.599312 [AT070AA2600020] Processing 1 selected device(s) directly without reboot...
+2026-03-27T12:00:14.600076 [AT070AA2600020] 
+>>> PROCESSING DEVICE: AT070AA2600020 <<<
+2026-03-27T12:00:14.604109 [AT070AA2600020] Device Identity (AT070AA2600020) -> HW: 5719F12D | SW: AT070AA2600020 | AIO: AT070AA2600020
+2026-03-27T12:00:14.855896 [AT070AA2600020] Secure Boot State (AT070AA2600020): green
+2026-03-27T12:00:14.870323 [AT070AA2600020] Checking Root for AT070AA2600020...
+2026-03-27T12:00:17.102566 [AT070AA2600020] Pushing rkp_factory_extraction_tool to device...
+2026-03-27T12:00:17.230994 [AT070AA2600020] /home/flasher02/keys_flashing_tool/data/rkp_factory_extraction_tool: 1 file pushed, 0 skipped. 80.0 MB/s (710524 bytes in 0.008s)
+2026-03-27T12:00:17.231470 [AT070AA2600020] Setting permissions...
+2026-03-27T12:00:17.393876 [AT070AA2600020] Executing CSR Generation on device...
+2026-03-27T12:00:17.569319 Keybox ready for AT070AA2600020: /home/flasher02/keys_flashing_tool/data/keyboxes/AT070AA2600020.xml
+2026-03-27T12:00:17.769606 [AT070AA2600020] ❌ ERROR: Device is missing Attestation IDs.
+2026-03-27T12:00:17.770640 [AT070AA2600020] Saving CSR error log on device: /data/csr_error_AT070AA2600020.txt
+2026-03-27T12:00:17.864116 [AT070AA2600020] Pulling CSR error log to PC...
+2026-03-27T12:00:17.889690 [AT070AA2600020] /data/csr_error_AT070AA2600020.txt: 1 file pulled, 0 skipped. 0.1 MB/s (514 bytes in 0.005s)
+2026-03-27T12:00:17.908312 [AT070AA2600020] ✅ CSR error log saved to: /home/flasher02/keys_flashing_tool/data/errors/csr_error_AT070AA2600020.txt
+2026-03-27T12:00:17.909441 [AT070AA2600020] CSR not available yet for AT070AA2600020 (Device Error: Attestation IDs are missing or malprovisioned.). Proceeding with keybox flashing.
+2026-03-27T12:00:17.920099 [AT070AA2600020] Using Keybox: /home/flasher02/keys_flashing_tool/data/keyboxes/AT070AA2600020.xml
+2026-03-27T12:00:19.910574 [AT070AA2600020] Pushing keybox XML...
+2026-03-27T12:00:19.942494 [AT070AA2600020] /home/flasher02/keys_flashing_tool/data/keyboxes/AT070AA2600020.xml: 1 file pushed, 0 skipped. 2.2 MB/s (12719 bytes in 0.006s)
+2026-03-27T12:00:19.943579 [AT070AA2600020] Installing keybox...
+2026-03-27T12:00:25.041722 [AT070AA2600020] Brand: AIOAPPInc
+2026-03-27T12:00:25.082700 [AT070AA2600020] Device: T7
+2026-03-27T12:00:25.083601 [AT070AA2600020] Product: TSAI
+2026-03-27T12:00:25.084259 [AT070AA2600020] SerialNum: AT070AA2600020
+2026-03-27T12:00:25.084992 [AT070AA2600020] Manufacturer: AIO
+2026-03-27T12:00:25.085641 [AT070AA2600020] Model: T7
+2026-03-27T12:00:25.086318 [AT070AA2600020] KeyMasterProvisionDeviceId error-10004
+2026-03-27T12:00:25.100903 [AT070AA2600020] InstallKeybox Failed!-10004
+2026-03-27T12:00:25.101472 [AT070AA2600020] ❌ FATAL ERROR: Detected failure string 'InstallKeybox Failed' in output!
+2026-03-27T12:00:25.102079 [AT070AA2600020] ❌ KmInstallKeybox Failed
+2026-03-27T12:00:25.116810 [AT070AA2600020] 
+========================================
+       MULTI-DEVICE SESSION REPORT
+========================================
+Time: 2026-03-27 12:00:25
+----------------------------------------
+AIO: AT070AA2600020 | HW: 5719F12D     | SW: AT070AA2600020 | ❌ FAIL | KmInstallKeybox Failed
+----------------------------------------
+TOTAL: 1 | PASSED: 0 | FAILED: 1
+========================================
+
+2026-03-27T12:00:25.117211 [AT070AA2600020] Processed initial devices: 1/1 (PASS/FAIL terminal states).
+2026-03-27T12:00:25.117507 [AT070AA2600020] Total Elapsed Time (from START FLASHING click): 00:00:10
+2026-03-27T12:00:25.117839 [AT070AA2600020] --- FINAL RESULT: FAIL - KmInstallKeybox Failed ---
+2026-03-27T12:00:25.118077 --- Parallel Flashing Session Report ---
+2026-03-27T12:00:25.118435 
+========================================
+       MULTI-DEVICE SESSION REPORT
+========================================
+Time: 2026-03-27 12:00:25
+----------------------------------------
+AIO: AT070AA2600020 | HW: 5719F12D     | SW: AT070AA2600020 | ❌ FAIL | KmInstallKeybox Failed
+----------------------------------------
+TOTAL: 1 | PASSED: 0 | FAILED: 1
+========================================
+
+2026-03-27T12:00:25.118599 Processed devices in parallel: 1/1
+2026-03-27T12:00:25.118757 Total Elapsed Time (from START FLASHING click): 00:00:10
+2026-03-27T12:00:25.118937 --- User Firmware Skipped For Failed Devices ---
+2026-03-27T12:00:25.119099 AIO: AT070AA2600020 | HW: 5719F12D | SW: AT070AA2600020 | SKIPPED | KmInstallKeybox Failed
+2026-03-27T12:00:25.119492 No devices completed keybox/CSR successfully, so user firmware flashing was skipped.
+2026-03-27T12:01:15.296517 Initializing On-Demand CSR Extraction for AT070AA2600020...
+2026-03-27T12:01:15.309073 
+--- Starting On-Demand CSR Extraction for AT070AA2600020 ---
+2026-03-27T12:01:15.317880 Checking Root for AT070AA2600020...
+2026-03-27T12:01:15.362711 Pushing rkp_factory_extraction_tool to device...
+2026-03-27T12:01:15.432322 /home/flasher02/keys_flashing_tool/data/rkp_factory_extraction_tool: 1 file pushed, 0 skipped. 98.4 MB/s (710524 bytes in 0.007s)
+2026-03-27T12:01:15.433145 Setting permissions...
+2026-03-27T12:01:15.628937 Executing CSR Generation on device...
+2026-03-27T12:01:15.893603 ❌ ERROR: Device is missing Attestation IDs.
+2026-03-27T12:01:15.894385 Saving CSR error log on device: /data/csr_error_AT070AA2600020.txt
+2026-03-27T12:01:15.965851 Pulling CSR error log to PC...
+2026-03-27T12:01:15.991151 /data/csr_error_AT070AA2600020.txt: 1 file pulled, 0 skipped. 0.1 MB/s (514 bytes in 0.004s)
+2026-03-27T12:01:15.992022 ✅ CSR error log saved to: /home/flasher02/keys_flashing_tool/data/errors/csr_error_AT070AA2600020.txt
+2026-03-27T12:01:15.992785 Device Error: Attestation IDs are missing or malprovisioned.
+2026-03-27T12:01:22.233488 [AT070AA2600020] Initializing On-Demand Keybox Install for AT070AA2600020...
+2026-03-27T12:01:22.246285 [AT070AA2600020] 
+--- Starting On-Demand Keybox Install for AT070AA2600020 ---
+2026-03-27T12:01:22.246711 Error during keybox install: 'KeyboxInstallerThread' object has no attribute 'data_root'

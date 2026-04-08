@@ -1,0 +1,44 @@
+=== Session Log - 2026-03-27T11:39:32.936951 ===
+2026-03-27T11:39:32.937533 Initializing Parallel Multi-Device Flash Process...
+2026-03-27T11:39:32.940881 [AT070AA2600020] --- Starting Multi-Device Flash Process ---
+2026-03-27T11:39:32.950719 [AT070AA2600020] Target devices captured at START FLASHING: 1
+2026-03-27T11:39:32.951721 [AT070AA2600020] Processing 1 selected device(s) directly without reboot...
+2026-03-27T11:39:32.952199 [AT070AA2600020] 
+>>> PROCESSING DEVICE: AT070AA2600020 <<<
+2026-03-27T11:39:32.957748 [AT070AA2600020] Device Identity (AT070AA2600020) -> HW: 5719F12D | SW: AT070AA2600020 | AIO: AT070AA2600020
+2026-03-27T11:39:33.166687 [AT070AA2600020] Secure Boot State (AT070AA2600020): orange
+2026-03-27T11:39:33.209297 [AT070AA2600020] ❌ Secure Boot NOT active (orange)
+2026-03-27T11:39:33.222102 [AT070AA2600020] 
+========================================
+       MULTI-DEVICE SESSION REPORT
+========================================
+Time: 2026-03-27 11:39:33
+----------------------------------------
+AIO: AT070AA2600020 | HW: 5719F12D     | SW: AT070AA2600020 | ❌ FAIL | Secure Boot NOT active (orange)
+----------------------------------------
+TOTAL: 1 | PASSED: 0 | FAILED: 1
+========================================
+
+2026-03-27T11:39:33.222470 [AT070AA2600020] Processed initial devices: 1/1 (PASS/FAIL terminal states).
+2026-03-27T11:39:33.222794 [AT070AA2600020] Total Elapsed Time (from START FLASHING click): 00:00:00
+2026-03-27T11:39:33.223091 [AT070AA2600020] --- FINAL RESULT: FAIL - Secure Boot NOT active (orange) ---
+2026-03-27T11:39:33.223302 --- Parallel Flashing Session Report ---
+2026-03-27T11:39:33.223627 
+========================================
+       MULTI-DEVICE SESSION REPORT
+========================================
+Time: 2026-03-27 11:39:33
+----------------------------------------
+AIO: AT070AA2600020 | HW: 5719F12D     | SW: AT070AA2600020 | ❌ FAIL | Secure Boot NOT active (orange)
+----------------------------------------
+TOTAL: 1 | PASSED: 0 | FAILED: 1
+========================================
+
+2026-03-27T11:39:33.223758 Processed devices in parallel: 1/1
+2026-03-27T11:39:33.223872 Total Elapsed Time (from START FLASHING click): 00:00:00
+2026-03-27T11:39:33.224763 --- User Firmware Skipped For Failed Devices ---
+2026-03-27T11:39:33.224944 AIO: AT070AA2600020 | HW: 5719F12D | SW: AT070AA2600020 | SKIPPED | Secure Boot NOT active (orange)
+2026-03-27T11:39:33.225337 No devices completed keybox/CSR successfully, so user firmware flashing was skipped.
+2026-03-27T11:55:33.580014 Keybox ready for AT070AA2600020: /home/flasher02/keys_flashing_tool/data/keyboxes/AT070AA2600020.xml
+2026-03-27T11:56:41.576033 Keybox ready for AT070AA2600020: /home/flasher02/keys_flashing_tool/data/keyboxes/AT070AA2600020.xml
+2026-03-27T11:59:25.576648 Keybox ready for AT070AA2600020: /home/flasher02/keys_flashing_tool/data/keyboxes/AT070AA2600020.xml

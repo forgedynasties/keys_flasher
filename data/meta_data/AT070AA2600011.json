@@ -1,0 +1,8 @@
+{
+    "serial": "AT070AA2600011",
+    "status": "FAIL",
+    "timestamp": "2026-03-09T14:12:53.640840",
+    "details": {
+        "error": "KmInstallKeybox Failed"
+    }
+}

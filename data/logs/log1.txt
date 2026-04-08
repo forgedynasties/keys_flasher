@@ -1,0 +1,1345 @@
+nitializing Parallel Multi-Device Flash Process...
+[AT070AA2600031] --- Starting Multi-Device Flash Process ---
+[AT070AA2600031] Target devices captured at START FLASHING: 1
+[AT070AA2600031] Processing 1 selected device(s) directly without reboot...
+[AT070AA2600031] 
+>>> PROCESSING DEVICE: AT070AA2600031 <<<
+[AT070AA2600031] Secure Boot State (AT070AA2600031): green
+[AT070AA2600031] Checking Root for AT070AA2600031...
+[AT070AA2600031] Pushing rkp_factory_extraction_tool to device...
+[AT070AA2600031] data/rkp_factory_extraction_tool: 1 file pushed, 0 skipped. 80.3 MB/s (710524 bytes in 0.008s)
+[AT070AA2600031] Setting permissions...
+Keybox ready for AT070AA2600031: data/keyboxes/AT070AA2600031.xml
+[AT070AA2600031] Executing CSR Generation on device...
+[AT070AA2600031] ❌ ERROR: Device is missing Attestation IDs.
+[AT070AA2600031] Saving CSR error log on device: /data/csr_error_AT070AA2600031.txt
+[AT070AA2600031] Pulling CSR error log to PC...
+[AT070AA2600031] /data/csr_error_AT070AA2600031.txt: 1 file pulled, 0 skipped. 0.1 MB/s (514 bytes in 0.007s)
+[AT070AA2600031] ✅ CSR error log saved to: data/errors/csr_error_AT070AA2600031.txt
+[AT070AA2600031] CSR not available yet for AT070AA2600031 (Device Error: Attestation IDs are missing or malprovisioned.). Proceeding with keybox flashing.
+[AT070AA2600031] Using Keybox: data/keyboxes/AT070AA2600031.xml
+[AT070AA2600031] Pushing keybox XML...
+[AT070AA2600031] data/keyboxes/AT070AA2600031.xml: 1 file pushed, 0 skipped. 132.4 MB/s (12719 bytes in 0.000s)
+[AT070AA2600031] Installing keybox...
+[AT070AA2600031] Brand: AIOAPPInc
+[AT070AA2600031] Device: T7
+[AT070AA2600031] Product: TSAI
+[AT070AA2600031] SerialNum: AT070AA2600031
+[AT070AA2600031] Manufacturer: AIO
+[AT070AA2600031] Model: T7
+[AT070AA2600031] Number of keyboxes 1
+[AT070AA2600031] myDeviceID: AT070AA2600031
+[AT070AA2600031] keyboxCtx.device_id.data: AT070AA2600031
+[AT070AA2600031] KeyMaster Attestation Key Provisioning success for KeyIDAT070AA2600031
+[AT070AA2600031] TEE done
+[AT070AA2600031] InstallKeybox is done!
+[AT070AA2600031] Checking Root for AT070AA2600031...
+[AT070AA2600031] Pushing rkp_factory_extraction_tool to device...
+[AT070AA2600031] data/rkp_factory_extraction_tool: 1 file pushed, 0 skipped. 220.6 MB/s (710524 bytes in 0.003s)
+[AT070AA2600031] Setting permissions...
+[AT070AA2600031] Executing CSR Generation on device...
+[AT070AA2600031] Pulling CSR to PC...
+[AT070AA2600031] /data/csr_AT070AA2600031.json: 1 file pulled, 0 skipped. 0.4 MB/s (1235 bytes in 0.003s)
+[AT070AA2600031] ✅ CSR Successfully Saved: csr_AT070AA2600031.json
+
+[AT070AA2600031] 
+========================================
+       MULTI-DEVICE SESSION REPORT
+========================================
+Time: 2026-03-13 15:23:00
+----------------------------------------
+SN: AT070AA2600031   | ✅ PASS | Completed Successfully
+----------------------------------------
+TOTAL: 1 | PASSED: 1 | FAILED: 0
+========================================
+
+[AT070AA2600031] Processed initial devices: 1/1 (PASS/FAIL terminal states).
+[AT070AA2600031] Total Elapsed Time (from START FLASHING click): 00:00:14
+[AT070AA2600031] --- FINAL RESULT: PASS - Completed Successfully ---
+--- Parallel Flashing Session Report ---
+
+========================================
+       MULTI-DEVICE SESSION REPORT
+========================================
+Time: 2026-03-13 15:23:00
+----------------------------------------
+SN: AT070AA2600031   | ✅ PASS | Completed Successfully
+----------------------------------------
+TOTAL: 1 | PASSED: 1 | FAILED: 0
+========================================
+
+Processed devices in parallel: 1/1
+Total Elapsed Time (from START FLASHING click): 00:00:14
+All connected devices processed in parallel.
+Keybox ready for AT070AA2600031: data/keyboxes/AT070AA2600031.xml
+Initializing Parallel EDL Firmware Flash...
+
+--- Starting Parallel EDL Firmware Flashing Process ---
+ADB devices selected for EDL reboot: 1
+Rebooting AT070AA2600031 to EDL...
+Waiting for EDL devices via `qdl list`...
+Detected EDL devices: 0/1
+EDL targets: 1988DB0F
+[EDL:1988DB0F] Starting firmware flash...
+[EDL:1988DB0F] [sudo] password for flasher02: waiting for programmer...
+[EDL:1988DB0F] successfully erased 2349528+0x20000
+[EDL:1988DB0F] successfully erased 3677144+0x820000
+[EDL:1988DB0F] successfully erased 12196824+0x0
+[EDL:1988DB0F] modem_a 2.77%
+[EDL:1988DB0F] modem_a 13.86%
+[EDL:1988DB0F] modem_a 24.95%
+[EDL:1988DB0F] modem_a 36.03%
+[EDL:1988DB0F] modem_a 47.12%
+[EDL:1988DB0F] modem_a 58.21%
+[EDL:1988DB0F] modem_a 69.30%
+[EDL:1988DB0F] modem_a 80.38%
+[EDL:1988DB0F] modem_a 91.47%
+[EDL:1988DB0F] modem_a 100.00%
+[EDL:1988DB0F] flashed "modem_a" successfully at 36942kB/s
+[EDL:1988DB0F] modem_b 2.77%
+[EDL:1988DB0F] modem_b 13.86%
+[EDL:1988DB0F] modem_b 24.95%
+[EDL:1988DB0F] modem_b 36.03%
+[EDL:1988DB0F] modem_b 47.12%
+[EDL:1988DB0F] modem_b 58.21%
+[EDL:1988DB0F] modem_b 69.30%
+[EDL:1988DB0F] modem_b 80.38%
+[EDL:1988DB0F] modem_b 91.47%
+[EDL:1988DB0F] flashed "modem_b" successfully at 36942kB/s
+[EDL:1988DB0F] imagefv_a 49.71%
+[EDL:1988DB0F] flashed "imagefv_a" successfully
+[EDL:1988DB0F] imagefv_b 49.71%
+[EDL:1988DB0F] flashed "imagefv_b" successfully
+[EDL:1988DB0F] cmnlib_a 100.00%
+[EDL:1988DB0F] flashed "cmnlib_a" successfully
+[EDL:1988DB0F] cmnlib64_a 100.00%
+[EDL:1988DB0F] flashed "cmnlib64_a" successfully
+[EDL:1988DB0F] cmnlib_b 100.00%
+[EDL:1988DB0F] flashed "cmnlib_b" successfully
+[EDL:1988DB0F] cmnlib64_b 100.00%
+[EDL:1988DB0F] flashed "cmnlib64_b" successfully
+[EDL:1988DB0F] devcfg_a 100.00%
+[EDL:1988DB0F] flashed "devcfg_a" successfully
+[EDL:1988DB0F] devcfg_b 100.00%
+[EDL:1988DB0F] flashed "devcfg_b" successfully
+[EDL:1988DB0F] devinfo 100.00%
+[EDL:1988DB0F] flashed "devinfo" successfully
+[EDL:1988DB0F] dsp_a 3.12%
+[EDL:1988DB0F] dsp_a 15.62%
+[EDL:1988DB0F] dsp_a 28.12%
+[EDL:1988DB0F] dsp_a 40.62%
+[EDL:1988DB0F] dsp_a 53.12%
+[EDL:1988DB0F] dsp_a 65.62%
+[EDL:1988DB0F] dsp_a 78.12%
+[EDL:1988DB0F] dsp_a 90.62%
+[EDL:1988DB0F] flashed "dsp_a" successfully at 32768kB/s
+[EDL:1988DB0F] dsp_b 3.12%
+[EDL:1988DB0F] dsp_b 15.62%
+[EDL:1988DB0F] dsp_b 28.12%
+[EDL:1988DB0F] dsp_b 40.62%
+[EDL:1988DB0F] dsp_b 53.12%
+[EDL:1988DB0F] dsp_b 65.62%
+[EDL:1988DB0F] dsp_b 78.12%
+[EDL:1988DB0F] dsp_b 90.62%
+[EDL:1988DB0F] flashed "dsp_b" successfully at 32768kB/s
+[EDL:1988DB0F] hyp_a 100.00%
+[EDL:1988DB0F] flashed "hyp_a" successfully
+[EDL:1988DB0F] hyp_b 100.00%
+[EDL:1988DB0F] flashed "hyp_b" successfully
+[EDL:1988DB0F] keymaster_a 100.00%
+[EDL:1988DB0F] flashed "keymaster_a" successfully
+[EDL:1988DB0F] keymaster_b 100.00%
+[EDL:1988DB0F] flashed "keymaster_b" successfully
+[EDL:1988DB0F] logfs 100.00%
+[EDL:1988DB0F] flashed "logfs" successfully
+[EDL:1988DB0F] qupfw_a 100.00%
+[EDL:1988DB0F] flashed "qupfw_a" successfully
+[EDL:1988DB0F] qupfw_b 100.00%
+[EDL:1988DB0F] flashed "qupfw_b" successfully
+[EDL:1988DB0F] rpm_a 100.00%
+[EDL:1988DB0F] flashed "rpm_a" successfully
+[EDL:1988DB0F] rpm_b 100.00%
+[EDL:1988DB0F] flashed "rpm_b" successfully
+[EDL:1988DB0F] storsec 100.00%
+[EDL:1988DB0F] flashed "storsec" successfully
+[EDL:1988DB0F] tz_a 51.61%
+[EDL:1988DB0F] flashed "tz_a" successfully at 1984kB/s
+[EDL:1988DB0F] tz_b 51.61%
+[EDL:1988DB0F] flashed "tz_b" successfully
+[EDL:1988DB0F] uefisecapp_a 100.00%
+[EDL:1988DB0F] flashed "uefisecapp_a" successfully
+[EDL:1988DB0F] uefisecapp_b 100.00%
+[EDL:1988DB0F] flashed "uefisecapp_b" successfully
+[EDL:1988DB0F] xbl_a 34.94%
+[EDL:1988DB0F] flashed "xbl_a" successfully
+[EDL:1988DB0F] xbl_b 34.94%
+[EDL:1988DB0F] flashed "xbl_b" successfully
+[EDL:1988DB0F] xbl_config_a 100.00%
+[EDL:1988DB0F] flashed "xbl_config_a" successfully
+[EDL:1988DB0F] xbl_config_b 100.00%
+[EDL:1988DB0F] flashed "xbl_config_b" successfully
+[EDL:1988DB0F] abl_a 100.00%
+[EDL:1988DB0F] flashed "abl_a" successfully
+[EDL:1988DB0F] abl_b 100.00%
+[EDL:1988DB0F] flashed "abl_b" successfully
+[EDL:1988DB0F] boot_a 1.04%
+[EDL:1988DB0F] boot_a 5.21%
+[EDL:1988DB0F] boot_a 9.38%
+[EDL:1988DB0F] boot_a 13.54%
+[EDL:1988DB0F] boot_a 17.71%
+[EDL:1988DB0F] boot_a 21.88%
+[EDL:1988DB0F] boot_a 26.04%
+[EDL:1988DB0F] boot_a 30.21%
+[EDL:1988DB0F] boot_a 34.38%
+[EDL:1988DB0F] boot_a 38.54%
+[EDL:1988DB0F] boot_a 42.71%
+[EDL:1988DB0F] boot_a 46.88%
+[EDL:1988DB0F] boot_a 51.04%
+[EDL:1988DB0F] boot_a 55.21%
+[EDL:1988DB0F] boot_a 59.38%
+[EDL:1988DB0F] boot_a 63.54%
+[EDL:1988DB0F] boot_a 67.71%
+[EDL:1988DB0F] boot_a 71.88%
+[EDL:1988DB0F] boot_a 76.04%
+[EDL:1988DB0F] boot_a 80.21%
+[EDL:1988DB0F] boot_a 84.38%
+[EDL:1988DB0F] boot_a 88.54%
+[EDL:1988DB0F] boot_a 92.71%
+[EDL:1988DB0F] boot_a 96.88%
+[EDL:1988DB0F] flashed "boot_a" successfully at 32768kB/s
+[EDL:1988DB0F] boot_b 1.04%
+[EDL:1988DB0F] boot_b 5.21%
+[EDL:1988DB0F] boot_b 9.38%
+[EDL:1988DB0F] boot_b 13.54%
+[EDL:1988DB0F] boot_b 17.71%
+[EDL:1988DB0F] boot_b 21.88%
+[EDL:1988DB0F] boot_b 26.04%
+[EDL:1988DB0F] boot_b 30.21%
+[EDL:1988DB0F] boot_b 34.38%
+[EDL:1988DB0F] boot_b 38.54%
+[EDL:1988DB0F] boot_b 42.71%
+[EDL:1988DB0F] boot_b 46.88%
+[EDL:1988DB0F] boot_b 51.04%
+[EDL:1988DB0F] boot_b 55.21%
+[EDL:1988DB0F] boot_b 59.38%
+[EDL:1988DB0F] boot_b 63.54%
+[EDL:1988DB0F] boot_b 67.71%
+[EDL:1988DB0F] boot_b 71.88%
+[EDL:1988DB0F] boot_b 76.04%
+[EDL:1988DB0F] boot_b 80.21%
+[EDL:1988DB0F] boot_b 84.38%
+[EDL:1988DB0F] boot_b 88.54%
+[EDL:1988DB0F] boot_b 92.71%
+[EDL:1988DB0F] boot_b 96.88%
+[EDL:1988DB0F] flashed "boot_b" successfully at 32768kB/s
+[EDL:1988DB0F] dtbo_a 12.50%
+[EDL:1988DB0F] dtbo_a 62.50%
+[EDL:1988DB0F] flashed "dtbo_a" successfully
+[EDL:1988DB0F] dtbo_b 12.50%
+[EDL:1988DB0F] dtbo_b 62.50%
+[EDL:1988DB0F] flashed "dtbo_b" successfully at 8192kB/s
+[EDL:1988DB0F] init_boot_a 12.50%
+[EDL:1988DB0F] init_boot_a 62.50%
+[EDL:1988DB0F] flashed "init_boot_a" successfully
+[EDL:1988DB0F] init_boot_b 12.50%
+[EDL:1988DB0F] init_boot_b 62.50%
+[EDL:1988DB0F] flashed "init_boot_b" successfully
+[EDL:1988DB0F] metadata 100.00%
+[EDL:1988DB0F] flashed "metadata" successfully
+[EDL:1988DB0F] metadata 100.00%
+[EDL:1988DB0F] flashed "metadata" successfully
+[EDL:1988DB0F] metadata 9.95%
+[EDL:1988DB0F] metadata 49.75%
+[EDL:1988DB0F] metadata 89.55%
+[EDL:1988DB0F] flashed "metadata" successfully
+[EDL:1988DB0F] metadata 100.00%
+[EDL:1988DB0F] flashed "metadata" successfully
+[EDL:1988DB0F] metadata 100.00%
+[EDL:1988DB0F] flashed "metadata" successfully
+[EDL:1988DB0F] recovery_a 1.00%
+[EDL:1988DB0F] recovery_a 5.00%
+[EDL:1988DB0F] recovery_a 9.00%
+[EDL:1988DB0F] recovery_a 13.00%
+[EDL:1988DB0F] recovery_a 17.00%
+[EDL:1988DB0F] recovery_a 21.00%
+[EDL:1988DB0F] recovery_a 25.00%
+[EDL:1988DB0F] recovery_a 29.00%
+[EDL:1988DB0F] recovery_a 33.00%
+[EDL:1988DB0F] recovery_a 37.00%
+[EDL:1988DB0F] recovery_a 41.00%
+[EDL:1988DB0F] recovery_a 45.00%
+[EDL:1988DB0F] recovery_a 49.00%
+[EDL:1988DB0F] recovery_a 53.00%
+[EDL:1988DB0F] recovery_a 57.00%
+[EDL:1988DB0F] recovery_a 61.00%
+[EDL:1988DB0F] recovery_a 65.00%
+[EDL:1988DB0F] recovery_a 69.00%
+[EDL:1988DB0F] recovery_a 73.00%
+[EDL:1988DB0F] recovery_a 77.00%
+[EDL:1988DB0F] recovery_a 81.00%
+[EDL:1988DB0F] recovery_a 85.00%
+[EDL:1988DB0F] recovery_a 89.00%
+[EDL:1988DB0F] recovery_a 93.00%
+[EDL:1988DB0F] recovery_a 97.00%
+[EDL:1988DB0F] flashed "recovery_a" successfully at 34133kB/s
+[EDL:1988DB0F] recovery_b 1.00%
+[EDL:1988DB0F] recovery_b 5.00%
+[EDL:1988DB0F] recovery_b 9.00%
+[EDL:1988DB0F] recovery_b 13.00%
+[EDL:1988DB0F] recovery_b 17.00%
+[EDL:1988DB0F] recovery_b 21.00%
+[EDL:1988DB0F] recovery_b 25.00%
+[EDL:1988DB0F] recovery_b 29.00%
+[EDL:1988DB0F] recovery_b 33.00%
+[EDL:1988DB0F] recovery_b 37.00%
+[EDL:1988DB0F] recovery_b 41.00%
+[EDL:1988DB0F] recovery_b 45.00%
+[EDL:1988DB0F] recovery_b 49.00%
+[EDL:1988DB0F] recovery_b 53.00%
+[EDL:1988DB0F] recovery_b 57.00%
+[EDL:1988DB0F] recovery_b 61.00%
+[EDL:1988DB0F] recovery_b 65.00%
+[EDL:1988DB0F] recovery_b 69.00%
+[EDL:1988DB0F] recovery_b 73.00%
+[EDL:1988DB0F] recovery_b 77.00%
+[EDL:1988DB0F] recovery_b 81.00%
+[EDL:1988DB0F] recovery_b 85.00%
+[EDL:1988DB0F] recovery_b 89.00%
+[EDL:1988DB0F] recovery_b 93.00%
+[EDL:1988DB0F] recovery_b 97.00%
+[EDL:1988DB0F] flashed "recovery_b" successfully at 34133kB/s
+[EDL:1988DB0F] vbmeta_a 100.00%
+[EDL:1988DB0F] flashed "vbmeta_a" successfully
+[EDL:1988DB0F] vbmeta_b 100.00%
+[EDL:1988DB0F] flashed "vbmeta_b" successfully
+[EDL:1988DB0F] vendor_boot_a 1.04%
+[EDL:1988DB0F] vendor_boot_a 5.21%
+[EDL:1988DB0F] vendor_boot_a 9.38%
+[EDL:1988DB0F] vendor_boot_a 13.54%
+[EDL:1988DB0F] vendor_boot_a 17.71%
+[EDL:1988DB0F] vendor_boot_a 21.88%
+[EDL:1988DB0F] vendor_boot_a 26.04%
+[EDL:1988DB0F] vendor_boot_a 30.21%
+[EDL:1988DB0F] vendor_boot_a 34.38%
+[EDL:1988DB0F] vendor_boot_a 38.54%
+[EDL:1988DB0F] vendor_boot_a 42.71%
+[EDL:1988DB0F] vendor_boot_a 46.88%
+[EDL:1988DB0F] vendor_boot_a 51.04%
+[EDL:1988DB0F] vendor_boot_a 55.21%
+[EDL:1988DB0F] vendor_boot_a 59.38%
+[EDL:1988DB0F] vendor_boot_a 63.54%
+[EDL:1988DB0F] vendor_boot_a 67.71%
+[EDL:1988DB0F] vendor_boot_a 71.88%
+[EDL:1988DB0F] vendor_boot_a 76.04%
+[EDL:1988DB0F] vendor_boot_a 80.21%
+[EDL:1988DB0F] vendor_boot_a 84.38%
+[EDL:1988DB0F] vendor_boot_a 88.54%
+[EDL:1988DB0F] vendor_boot_a 92.71%
+[EDL:1988DB0F] vendor_boot_a 96.88%
+[EDL:1988DB0F] flashed "vendor_boot_a" successfully at 32768kB/s
+[EDL:1988DB0F] vendor_boot_b 1.04%
+[EDL:1988DB0F] vendor_boot_b 5.21%
+[EDL:1988DB0F] vendor_boot_b 9.38%
+[EDL:1988DB0F] vendor_boot_b 13.54%
+[EDL:1988DB0F] vendor_boot_b 17.71%
+[EDL:1988DB0F] vendor_boot_b 21.88%
+[EDL:1988DB0F] vendor_boot_b 26.04%
+[EDL:1988DB0F] vendor_boot_b 30.21%
+[EDL:1988DB0F] vendor_boot_b 34.38%
+[EDL:1988DB0F] vendor_boot_b 38.54%
+[EDL:1988DB0F] vendor_boot_b 42.71%
+[EDL:1988DB0F] vendor_boot_b 46.88%
+[EDL:1988DB0F] vendor_boot_b 51.04%
+[EDL:1988DB0F] vendor_boot_b 55.21%
+[EDL:1988DB0F] vendor_boot_b 59.38%
+[EDL:1988DB0F] vendor_boot_b 63.54%
+[EDL:1988DB0F] vendor_boot_b 67.71%
+[EDL:1988DB0F] vendor_boot_b 71.88%
+[EDL:1988DB0F] vendor_boot_b 76.04%
+[EDL:1988DB0F] vendor_boot_b 80.21%
+[EDL:1988DB0F] vendor_boot_b 84.38%
+[EDL:1988DB0F] vendor_boot_b 88.54%
+[EDL:1988DB0F] vendor_boot_b 92.71%
+[EDL:1988DB0F] vendor_boot_b 96.88%
+[EDL:1988DB0F] flashed "vendor_boot_b" successfully at 32768kB/s
+[EDL:1988DB0F] vbmeta_system_a 100.00%
+[EDL:1988DB0F] flashed "vbmeta_system_a" successfully
+[EDL:1988DB0F] vbmeta_system_b 100.00%
+[EDL:1988DB0F] flashed "vbmeta_system_b" successfully
+[EDL:1988DB0F] super 100.00%
+[EDL:1988DB0F] flashed "super" successfully
+[EDL:1988DB0F] super 73.99%
+[EDL:1988DB0F] flashed "super" successfully
+[EDL:1988DB0F] super 0.07%
+[EDL:1988DB0F] super 0.35%
+[EDL:1988DB0F] super 0.64%
+[EDL:1988DB0F] super 0.92%
+[EDL:1988DB0F] super 1.20%
+[EDL:1988DB0F] super 1.49%
+[EDL:1988DB0F] super 1.77%
+[EDL:1988DB0F] super 2.05%
+[EDL:1988DB0F] super 2.33%
+[EDL:1988DB0F] super 2.62%
+[EDL:1988DB0F] super 2.90%
+[EDL:1988DB0F] super 3.18%
+[EDL:1988DB0F] super 3.47%
+[EDL:1988DB0F] super 3.75%
+[EDL:1988DB0F] super 4.03%
+[EDL:1988DB0F] super 4.32%
+[EDL:1988DB0F] super 4.60%
+[EDL:1988DB0F] super 4.88%
+[EDL:1988DB0F] super 5.16%
+[EDL:1988DB0F] super 5.45%
+[EDL:1988DB0F] super 5.73%
+[EDL:1988DB0F] super 6.01%
+[EDL:1988DB0F] super 6.30%
+[EDL:1988DB0F] super 6.58%
+[EDL:1988DB0F] super 6.86%
+[EDL:1988DB0F] super 7.15%
+[EDL:1988DB0F] super 7.43%
+[EDL:1988DB0F] super 7.71%
+[EDL:1988DB0F] super 8.00%
+[EDL:1988DB0F] super 8.28%
+[EDL:1988DB0F] super 8.56%
+[EDL:1988DB0F] super 8.84%
+[EDL:1988DB0F] super 9.13%
+[EDL:1988DB0F] super 9.41%
+[EDL:1988DB0F] super 9.69%
+[EDL:1988DB0F] super 9.98%
+[EDL:1988DB0F] super 10.26%
+[EDL:1988DB0F] super 10.54%
+[EDL:1988DB0F] super 10.83%
+[EDL:1988DB0F] super 11.11%
+[EDL:1988DB0F] super 11.39%
+[EDL:1988DB0F] super 11.67%
+[EDL:1988DB0F] super 11.96%
+[EDL:1988DB0F] super 12.24%
+[EDL:1988DB0F] super 12.52%
+[EDL:1988DB0F] super 12.81%
+[EDL:1988DB0F] super 13.09%
+[EDL:1988DB0F] super 13.37%
+[EDL:1988DB0F] super 13.66%
+[EDL:1988DB0F] super 13.94%
+[EDL:1988DB0F] super 14.22%
+[EDL:1988DB0F] super 14.50%
+[EDL:1988DB0F] super 14.79%
+[EDL:1988DB0F] super 15.07%
+[EDL:1988DB0F] super 15.35%
+[EDL:1988DB0F] super 15.64%
+[EDL:1988DB0F] super 15.92%
+[EDL:1988DB0F] super 16.20%
+[EDL:1988DB0F] super 16.49%
+[EDL:1988DB0F] super 16.77%
+[EDL:1988DB0F] super 17.05%
+[EDL:1988DB0F] super 17.33%
+[EDL:1988DB0F] super 17.62%
+[EDL:1988DB0F] super 17.90%
+[EDL:1988DB0F] super 18.18%
+[EDL:1988DB0F] super 18.47%
+[EDL:1988DB0F] super 18.75%
+[EDL:1988DB0F] super 19.03%
+[EDL:1988DB0F] super 19.32%
+[EDL:1988DB0F] super 19.60%
+[EDL:1988DB0F] super 19.88%
+[EDL:1988DB0F] super 20.16%
+[EDL:1988DB0F] super 20.45%
+[EDL:1988DB0F] super 20.73%
+[EDL:1988DB0F] super 21.01%
+[EDL:1988DB0F] super 21.30%
+[EDL:1988DB0F] super 21.58%
+[EDL:1988DB0F] super 21.86%
+[EDL:1988DB0F] super 22.15%
+[EDL:1988DB0F] super 22.43%
+[EDL:1988DB0F] super 22.71%
+[EDL:1988DB0F] super 22.99%
+[EDL:1988DB0F] super 23.28%
+[EDL:1988DB0F] super 23.56%
+[EDL:1988DB0F] super 23.84%
+[EDL:1988DB0F] super 24.13%
+[EDL:1988DB0F] super 24.41%
+[EDL:1988DB0F] super 24.69%
+[EDL:1988DB0F] super 24.98%
+[EDL:1988DB0F] super 25.26%
+[EDL:1988DB0F] super 25.54%
+[EDL:1988DB0F] super 25.82%
+[EDL:1988DB0F] super 26.11%
+[EDL:1988DB0F] super 26.39%
+[EDL:1988DB0F] super 26.67%
+[EDL:1988DB0F] super 26.96%
+[EDL:1988DB0F] super 27.24%
+[EDL:1988DB0F] super 27.52%
+[EDL:1988DB0F] super 27.81%
+[EDL:1988DB0F] super 28.09%
+[EDL:1988DB0F] super 28.37%
+[EDL:1988DB0F] super 28.66%
+[EDL:1988DB0F] super 28.94%
+[EDL:1988DB0F] super 29.22%
+[EDL:1988DB0F] super 29.50%
+[EDL:1988DB0F] super 29.79%
+[EDL:1988DB0F] super 30.07%
+[EDL:1988DB0F] super 30.35%
+[EDL:1988DB0F] super 30.64%
+[EDL:1988DB0F] super 30.92%
+[EDL:1988DB0F] super 31.20%
+[EDL:1988DB0F] super 31.49%
+[EDL:1988DB0F] super 31.77%
+[EDL:1988DB0F] super 32.05%
+[EDL:1988DB0F] super 32.33%
+[EDL:1988DB0F] super 32.62%
+[EDL:1988DB0F] super 32.90%
+[EDL:1988DB0F] super 33.18%
+[EDL:1988DB0F] super 33.47%
+[EDL:1988DB0F] super 33.75%
+[EDL:1988DB0F] super 34.03%
+[EDL:1988DB0F] super 34.32%
+[EDL:1988DB0F] super 34.60%
+[EDL:1988DB0F] super 34.88%
+[EDL:1988DB0F] super 35.16%
+[EDL:1988DB0F] super 35.45%
+[EDL:1988DB0F] super 35.73%
+[EDL:1988DB0F] super 36.01%
+[EDL:1988DB0F] super 36.30%
+[EDL:1988DB0F] super 36.58%
+[EDL:1988DB0F] super 36.86%
+[EDL:1988DB0F] super 37.15%
+[EDL:1988DB0F] super 37.43%
+[EDL:1988DB0F] super 37.71%
+[EDL:1988DB0F] super 37.99%
+[EDL:1988DB0F] super 38.28%
+[EDL:1988DB0F] super 38.56%
+[EDL:1988DB0F] super 38.84%
+[EDL:1988DB0F] super 39.13%
+[EDL:1988DB0F] super 39.41%
+[EDL:1988DB0F] super 39.69%
+[EDL:1988DB0F] super 39.98%
+[EDL:1988DB0F] super 40.26%
+[EDL:1988DB0F] super 40.54%
+[EDL:1988DB0F] super 40.82%
+[EDL:1988DB0F] super 41.11%
+[EDL:1988DB0F] super 41.39%
+[EDL:1988DB0F] super 41.67%
+[EDL:1988DB0F] super 41.96%
+[EDL:1988DB0F] super 42.24%
+[EDL:1988DB0F] super 42.52%
+[EDL:1988DB0F] super 42.81%
+[EDL:1988DB0F] super 43.09%
+[EDL:1988DB0F] super 43.37%
+[EDL:1988DB0F] super 43.65%
+[EDL:1988DB0F] super 43.94%
+[EDL:1988DB0F] super 44.22%
+[EDL:1988DB0F] super 44.50%
+[EDL:1988DB0F] super 44.79%
+[EDL:1988DB0F] super 45.07%
+[EDL:1988DB0F] super 45.35%
+[EDL:1988DB0F] super 45.64%
+[EDL:1988DB0F] super 45.92%
+[EDL:1988DB0F] super 46.20%
+[EDL:1988DB0F] super 46.48%
+[EDL:1988DB0F] super 46.77%
+[EDL:1988DB0F] super 47.05%
+[EDL:1988DB0F] super 47.33%
+[EDL:1988DB0F] super 47.62%
+[EDL:1988DB0F] super 47.90%
+[EDL:1988DB0F] super 48.18%
+[EDL:1988DB0F] super 48.47%
+[EDL:1988DB0F] super 48.75%
+[EDL:1988DB0F] super 49.03%
+[EDL:1988DB0F] super 49.32%
+[EDL:1988DB0F] super 49.60%
+[EDL:1988DB0F] super 49.88%
+[EDL:1988DB0F] super 50.16%
+[EDL:1988DB0F] super 50.45%
+[EDL:1988DB0F] super 50.73%
+[EDL:1988DB0F] super 51.01%
+[EDL:1988DB0F] super 51.30%
+[EDL:1988DB0F] super 51.58%
+[EDL:1988DB0F] super 51.86%
+[EDL:1988DB0F] super 52.15%
+[EDL:1988DB0F] super 52.43%
+[EDL:1988DB0F] super 52.71%
+[EDL:1988DB0F] super 52.99%
+[EDL:1988DB0F] super 53.28%
+[EDL:1988DB0F] super 53.56%
+[EDL:1988DB0F] super 53.84%
+[EDL:1988DB0F] super 54.13%
+[EDL:1988DB0F] super 54.41%
+[EDL:1988DB0F] super 54.69%
+[EDL:1988DB0F] super 54.98%
+[EDL:1988DB0F] super 55.26%
+[EDL:1988DB0F] super 55.54%
+[EDL:1988DB0F] super 55.82%
+[EDL:1988DB0F] super 56.11%
+[EDL:1988DB0F] super 56.39%
+[EDL:1988DB0F] super 56.67%
+[EDL:1988DB0F] super 56.96%
+[EDL:1988DB0F] super 57.24%
+[EDL:1988DB0F] super 57.52%
+[EDL:1988DB0F] super 57.81%
+[EDL:1988DB0F] super 58.09%
+[EDL:1988DB0F] super 58.37%
+[EDL:1988DB0F] super 58.65%
+[EDL:1988DB0F] super 58.94%
+[EDL:1988DB0F] super 59.22%
+[EDL:1988DB0F] super 59.50%
+[EDL:1988DB0F] super 59.79%
+[EDL:1988DB0F] super 60.07%
+[EDL:1988DB0F] super 60.35%
+[EDL:1988DB0F] super 60.64%
+[EDL:1988DB0F] super 60.92%
+[EDL:1988DB0F] super 61.20%
+[EDL:1988DB0F] super 61.48%
+[EDL:1988DB0F] super 61.77%
+[EDL:1988DB0F] super 62.05%
+[EDL:1988DB0F] super 62.33%
+[EDL:1988DB0F] super 62.62%
+[EDL:1988DB0F] super 62.90%
+[EDL:1988DB0F] super 63.18%
+[EDL:1988DB0F] super 63.47%
+[EDL:1988DB0F] super 63.75%
+[EDL:1988DB0F] super 64.03%
+[EDL:1988DB0F] super 64.31%
+[EDL:1988DB0F] super 64.60%
+[EDL:1988DB0F] super 64.88%
+[EDL:1988DB0F] super 65.16%
+[EDL:1988DB0F] super 65.45%
+[EDL:1988DB0F] super 65.73%
+[EDL:1988DB0F] super 66.01%
+[EDL:1988DB0F] super 66.30%
+[EDL:1988DB0F] super 66.58%
+[EDL:1988DB0F] super 66.86%
+[EDL:1988DB0F] super 67.14%
+[EDL:1988DB0F] super 67.43%
+[EDL:1988DB0F] super 67.71%
+[EDL:1988DB0F] super 67.99%
+[EDL:1988DB0F] super 68.28%
+[EDL:1988DB0F] super 68.56%
+[EDL:1988DB0F] super 68.84%
+[EDL:1988DB0F] super 69.13%
+[EDL:1988DB0F] super 69.41%
+[EDL:1988DB0F] super 69.69%
+[EDL:1988DB0F] super 69.98%
+[EDL:1988DB0F] super 70.26%
+[EDL:1988DB0F] super 70.54%
+[EDL:1988DB0F] super 70.82%
+[EDL:1988DB0F] super 71.11%
+[EDL:1988DB0F] super 71.39%
+[EDL:1988DB0F] super 71.67%
+[EDL:1988DB0F] super 71.96%
+[EDL:1988DB0F] super 72.24%
+[EDL:1988DB0F] super 72.52%
+[EDL:1988DB0F] super 72.81%
+[EDL:1988DB0F] super 73.09%
+[EDL:1988DB0F] super 73.37%
+[EDL:1988DB0F] super 73.65%
+[EDL:1988DB0F] super 73.94%
+[EDL:1988DB0F] super 74.22%
+[EDL:1988DB0F] super 74.50%
+[EDL:1988DB0F] super 74.79%
+[EDL:1988DB0F] super 75.07%
+[EDL:1988DB0F] super 75.35%
+[EDL:1988DB0F] super 75.64%
+[EDL:1988DB0F] super 75.92%
+[EDL:1988DB0F] super 76.20%
+[EDL:1988DB0F] super 76.48%
+[EDL:1988DB0F] super 76.77%
+[EDL:1988DB0F] super 77.05%
+[EDL:1988DB0F] super 77.33%
+[EDL:1988DB0F] super 77.62%
+[EDL:1988DB0F] super 77.90%
+[EDL:1988DB0F] super 78.18%
+[EDL:1988DB0F] super 78.47%
+[EDL:1988DB0F] super 78.75%
+[EDL:1988DB0F] super 79.03%
+[EDL:1988DB0F] super 79.31%
+[EDL:1988DB0F] super 79.60%
+[EDL:1988DB0F] super 79.88%
+[EDL:1988DB0F] super 80.16%
+[EDL:1988DB0F] super 80.45%
+[EDL:1988DB0F] super 80.73%
+[EDL:1988DB0F] super 81.01%
+[EDL:1988DB0F] super 81.30%
+[EDL:1988DB0F] super 81.58%
+[EDL:1988DB0F] super 81.86%
+[EDL:1988DB0F] super 82.14%
+[EDL:1988DB0F] super 82.43%
+[EDL:1988DB0F] super 82.71%
+[EDL:1988DB0F] super 82.99%
+[EDL:1988DB0F] super 83.28%
+[EDL:1988DB0F] super 83.56%
+[EDL:1988DB0F] super 83.84%
+[EDL:1988DB0F] super 84.13%
+[EDL:1988DB0F] super 84.41%
+[EDL:1988DB0F] super 84.69%
+[EDL:1988DB0F] super 84.97%
+[EDL:1988DB0F] super 85.26%
+[EDL:1988DB0F] super 85.54%
+[EDL:1988DB0F] super 85.82%
+[EDL:1988DB0F] super 86.11%
+[EDL:1988DB0F] super 86.39%
+[EDL:1988DB0F] super 86.67%
+[EDL:1988DB0F] super 86.96%
+[EDL:1988DB0F] super 87.24%
+[EDL:1988DB0F] super 87.52%
+[EDL:1988DB0F] super 87.80%
+[EDL:1988DB0F] super 88.09%
+[EDL:1988DB0F] super 88.37%
+[EDL:1988DB0F] super 88.65%
+[EDL:1988DB0F] super 88.94%
+[EDL:1988DB0F] super 89.22%
+[EDL:1988DB0F] super 89.50%
+[EDL:1988DB0F] super 89.79%
+[EDL:1988DB0F] super 90.07%
+[EDL:1988DB0F] super 90.35%
+[EDL:1988DB0F] super 90.64%
+[EDL:1988DB0F] super 90.92%
+[EDL:1988DB0F] super 91.20%
+[EDL:1988DB0F] super 91.48%
+[EDL:1988DB0F] super 91.77%
+[EDL:1988DB0F] super 92.05%
+[EDL:1988DB0F] super 92.33%
+[EDL:1988DB0F] super 92.62%
+[EDL:1988DB0F] super 92.90%
+[EDL:1988DB0F] super 93.18%
+[EDL:1988DB0F] super 93.47%
+[EDL:1988DB0F] super 93.75%
+[EDL:1988DB0F] super 94.03%
+[EDL:1988DB0F] super 94.31%
+[EDL:1988DB0F] super 94.60%
+[EDL:1988DB0F] super 94.88%
+[EDL:1988DB0F] super 95.16%
+[EDL:1988DB0F] super 95.45%
+[EDL:1988DB0F] super 95.73%
+[EDL:1988DB0F] super 96.01%
+[EDL:1988DB0F] super 96.30%
+[EDL:1988DB0F] super 96.58%
+[EDL:1988DB0F] super 96.86%
+[EDL:1988DB0F] super 97.14%
+[EDL:1988DB0F] super 97.43%
+[EDL:1988DB0F] super 97.71%
+[EDL:1988DB0F] super 97.99%
+[EDL:1988DB0F] super 98.28%
+[EDL:1988DB0F] super 98.56%
+[EDL:1988DB0F] super 98.84%
+[EDL:1988DB0F] super 99.13%
+[EDL:1988DB0F] super 99.41%
+[EDL:1988DB0F] super 99.69%
+[EDL:1988DB0F] super 99.97%
+[EDL:1988DB0F] flashed "super" successfully at 32892kB/s
+[EDL:1988DB0F] super 0.10%
+[EDL:1988DB0F] super 0.52%
+[EDL:1988DB0F] super 0.94%
+[EDL:1988DB0F] super 1.36%
+[EDL:1988DB0F] super 1.78%
+[EDL:1988DB0F] super 2.20%
+[EDL:1988DB0F] super 2.62%
+[EDL:1988DB0F] super 3.04%
+[EDL:1988DB0F] super 3.46%
+[EDL:1988DB0F] super 3.88%
+[EDL:1988DB0F] super 4.30%
+[EDL:1988DB0F] super 4.72%
+[EDL:1988DB0F] super 5.14%
+[EDL:1988DB0F] super 5.56%
+[EDL:1988DB0F] super 5.98%
+[EDL:1988DB0F] super 6.40%
+[EDL:1988DB0F] super 6.82%
+[EDL:1988DB0F] super 7.24%
+[EDL:1988DB0F] super 7.66%
+[EDL:1988DB0F] super 8.08%
+[EDL:1988DB0F] super 8.50%
+[EDL:1988DB0F] super 8.92%
+[EDL:1988DB0F] super 9.34%
+[EDL:1988DB0F] super 9.76%
+[EDL:1988DB0F] super 10.18%
+[EDL:1988DB0F] super 10.60%
+[EDL:1988DB0F] super 11.02%
+[EDL:1988DB0F] super 11.44%
+[EDL:1988DB0F] super 11.86%
+[EDL:1988DB0F] super 12.28%
+[EDL:1988DB0F] super 12.70%
+[EDL:1988DB0F] super 13.12%
+[EDL:1988DB0F] super 13.54%
+[EDL:1988DB0F] super 13.96%
+[EDL:1988DB0F] super 14.38%
+[EDL:1988DB0F] super 14.80%
+[EDL:1988DB0F] super 15.22%
+[EDL:1988DB0F] super 15.64%
+[EDL:1988DB0F] super 16.06%
+[EDL:1988DB0F] super 16.48%
+[EDL:1988DB0F] super 16.89%
+[EDL:1988DB0F] super 17.31%
+[EDL:1988DB0F] super 17.73%
+[EDL:1988DB0F] super 18.15%
+[EDL:1988DB0F] super 18.57%
+[EDL:1988DB0F] super 18.99%
+[EDL:1988DB0F] super 19.41%
+[EDL:1988DB0F] super 19.83%
+[EDL:1988DB0F] super 20.25%
+[EDL:1988DB0F] super 20.67%
+[EDL:1988DB0F] super 21.09%
+[EDL:1988DB0F] super 21.51%
+[EDL:1988DB0F] super 21.93%
+[EDL:1988DB0F] super 22.35%
+[EDL:1988DB0F] super 22.77%
+[EDL:1988DB0F] super 23.19%
+[EDL:1988DB0F] super 23.61%
+[EDL:1988DB0F] super 24.03%
+[EDL:1988DB0F] super 24.45%
+[EDL:1988DB0F] super 24.87%
+[EDL:1988DB0F] super 25.29%
+[EDL:1988DB0F] super 25.71%
+[EDL:1988DB0F] super 26.13%
+[EDL:1988DB0F] super 26.55%
+[EDL:1988DB0F] super 26.97%
+[EDL:1988DB0F] super 27.39%
+[EDL:1988DB0F] super 27.81%
+[EDL:1988DB0F] super 28.23%
+[EDL:1988DB0F] super 28.65%
+[EDL:1988DB0F] super 29.07%
+[EDL:1988DB0F] super 29.49%
+[EDL:1988DB0F] super 29.91%
+[EDL:1988DB0F] super 30.33%
+[EDL:1988DB0F] super 30.75%
+[EDL:1988DB0F] super 31.17%
+[EDL:1988DB0F] super 31.59%
+[EDL:1988DB0F] super 32.01%
+[EDL:1988DB0F] super 32.43%
+[EDL:1988DB0F] super 32.85%
+[EDL:1988DB0F] super 33.26%
+[EDL:1988DB0F] super 33.68%
+[EDL:1988DB0F] super 34.10%
+[EDL:1988DB0F] super 34.52%
+[EDL:1988DB0F] super 34.94%
+[EDL:1988DB0F] super 35.36%
+[EDL:1988DB0F] super 35.78%
+[EDL:1988DB0F] super 36.20%
+[EDL:1988DB0F] super 36.62%
+[EDL:1988DB0F] super 37.04%
+[EDL:1988DB0F] super 37.46%
+[EDL:1988DB0F] super 37.88%
+[EDL:1988DB0F] super 38.30%
+[EDL:1988DB0F] super 38.72%
+[EDL:1988DB0F] super 39.14%
+[EDL:1988DB0F] super 39.56%
+[EDL:1988DB0F] super 39.98%
+[EDL:1988DB0F] super 40.40%
+[EDL:1988DB0F] super 40.82%
+[EDL:1988DB0F] super 41.24%
+[EDL:1988DB0F] super 41.66%
+[EDL:1988DB0F] super 42.08%
+[EDL:1988DB0F] super 42.50%
+[EDL:1988DB0F] super 42.92%
+[EDL:1988DB0F] super 43.34%
+[EDL:1988DB0F] super 43.76%
+[EDL:1988DB0F] super 44.18%
+[EDL:1988DB0F] super 44.60%
+[EDL:1988DB0F] super 45.02%
+[EDL:1988DB0F] super 45.44%
+[EDL:1988DB0F] super 45.86%
+[EDL:1988DB0F] super 46.28%
+[EDL:1988DB0F] super 46.70%
+[EDL:1988DB0F] super 47.12%
+[EDL:1988DB0F] super 47.54%
+[EDL:1988DB0F] super 47.96%
+[EDL:1988DB0F] super 48.38%
+[EDL:1988DB0F] super 48.80%
+[EDL:1988DB0F] super 49.22%
+[EDL:1988DB0F] super 49.63%
+[EDL:1988DB0F] super 50.05%
+[EDL:1988DB0F] super 50.47%
+[EDL:1988DB0F] super 50.89%
+[EDL:1988DB0F] super 51.31%
+[EDL:1988DB0F] super 51.73%
+[EDL:1988DB0F] super 52.15%
+[EDL:1988DB0F] super 52.57%
+[EDL:1988DB0F] super 52.99%
+[EDL:1988DB0F] super 53.41%
+[EDL:1988DB0F] super 53.83%
+[EDL:1988DB0F] super 54.25%
+[EDL:1988DB0F] super 54.67%
+[EDL:1988DB0F] super 55.09%
+[EDL:1988DB0F] super 55.51%
+[EDL:1988DB0F] super 55.93%
+[EDL:1988DB0F] super 56.35%
+[EDL:1988DB0F] super 56.77%
+[EDL:1988DB0F] super 57.19%
+[EDL:1988DB0F] super 57.61%
+[EDL:1988DB0F] super 58.03%
+[EDL:1988DB0F] super 58.45%
+[EDL:1988DB0F] super 58.87%
+[EDL:1988DB0F] super 59.29%
+[EDL:1988DB0F] super 59.71%
+[EDL:1988DB0F] super 60.13%
+[EDL:1988DB0F] super 60.55%
+[EDL:1988DB0F] super 60.97%
+[EDL:1988DB0F] super 61.39%
+[EDL:1988DB0F] super 61.81%
+[EDL:1988DB0F] super 62.23%
+[EDL:1988DB0F] super 62.65%
+[EDL:1988DB0F] super 63.07%
+[EDL:1988DB0F] super 63.49%
+[EDL:1988DB0F] super 63.91%
+[EDL:1988DB0F] super 64.33%
+[EDL:1988DB0F] super 64.75%
+[EDL:1988DB0F] super 65.17%
+[EDL:1988DB0F] super 65.59%
+[EDL:1988DB0F] super 66.01%
+[EDL:1988DB0F] super 66.42%
+[EDL:1988DB0F] super 66.84%
+[EDL:1988DB0F] super 67.26%
+[EDL:1988DB0F] super 67.68%
+[EDL:1988DB0F] super 68.10%
+[EDL:1988DB0F] super 68.52%
+[EDL:1988DB0F] super 68.94%
+[EDL:1988DB0F] super 69.36%
+[EDL:1988DB0F] super 69.78%
+[EDL:1988DB0F] super 70.20%
+[EDL:1988DB0F] super 70.62%
+[EDL:1988DB0F] super 71.04%
+[EDL:1988DB0F] super 71.46%
+[EDL:1988DB0F] super 71.88%
+[EDL:1988DB0F] super 72.30%
+[EDL:1988DB0F] super 72.72%
+[EDL:1988DB0F] super 73.14%
+[EDL:1988DB0F] super 73.56%
+[EDL:1988DB0F] super 73.98%
+[EDL:1988DB0F] super 74.40%
+[EDL:1988DB0F] super 74.82%
+[EDL:1988DB0F] super 75.24%
+[EDL:1988DB0F] super 75.66%
+[EDL:1988DB0F] super 76.08%
+[EDL:1988DB0F] super 76.50%
+[EDL:1988DB0F] super 76.92%
+[EDL:1988DB0F] super 77.34%
+[EDL:1988DB0F] super 77.76%
+[EDL:1988DB0F] super 78.18%
+[EDL:1988DB0F] super 78.60%
+[EDL:1988DB0F] super 79.02%
+[EDL:1988DB0F] super 79.44%
+[EDL:1988DB0F] super 79.86%
+[EDL:1988DB0F] super 80.28%
+[EDL:1988DB0F] super 80.70%
+[EDL:1988DB0F] super 81.12%
+[EDL:1988DB0F] super 81.54%
+[EDL:1988DB0F] super 81.96%
+[EDL:1988DB0F] super 82.38%
+[EDL:1988DB0F] super 82.79%
+[EDL:1988DB0F] super 83.21%
+[EDL:1988DB0F] super 83.63%
+[EDL:1988DB0F] super 84.05%
+[EDL:1988DB0F] super 84.47%
+[EDL:1988DB0F] super 84.89%
+[EDL:1988DB0F] super 85.31%
+[EDL:1988DB0F] super 85.73%
+[EDL:1988DB0F] super 86.15%
+[EDL:1988DB0F] super 86.57%
+[EDL:1988DB0F] super 86.99%
+[EDL:1988DB0F] super 87.41%
+[EDL:1988DB0F] super 87.83%
+[EDL:1988DB0F] super 88.25%
+[EDL:1988DB0F] super 88.67%
+[EDL:1988DB0F] super 89.09%
+[EDL:1988DB0F] super 89.51%
+[EDL:1988DB0F] super 89.93%
+[EDL:1988DB0F] super 90.35%
+[EDL:1988DB0F] super 90.77%
+[EDL:1988DB0F] super 91.19%
+[EDL:1988DB0F] super 91.61%
+[EDL:1988DB0F] super 92.03%
+[EDL:1988DB0F] super 92.45%
+[EDL:1988DB0F] super 92.87%
+[EDL:1988DB0F] super 93.29%
+[EDL:1988DB0F] super 93.71%
+[EDL:1988DB0F] super 94.13%
+[EDL:1988DB0F] super 94.55%
+[EDL:1988DB0F] super 94.97%
+[EDL:1988DB0F] super 95.39%
+[EDL:1988DB0F] super 95.81%
+[EDL:1988DB0F] super 96.23%
+[EDL:1988DB0F] super 96.65%
+[EDL:1988DB0F] super 97.07%
+[EDL:1988DB0F] super 97.49%
+[EDL:1988DB0F] super 97.91%
+[EDL:1988DB0F] super 98.33%
+[EDL:1988DB0F] super 98.75%
+[EDL:1988DB0F] super 99.17%
+[EDL:1988DB0F] super 99.58%
+[EDL:1988DB0F] super 100.00%
+[EDL:1988DB0F] flashed "super" successfully at 34851kB/s
+[EDL:1988DB0F] super 100.00%
+[EDL:1988DB0F] flashed "super" successfully
+[EDL:1988DB0F] super 0.16%
+[EDL:1988DB0F] super 0.80%
+[EDL:1988DB0F] super 1.44%
+[EDL:1988DB0F] super 2.09%
+[EDL:1988DB0F] super 2.73%
+[EDL:1988DB0F] super 3.37%
+[EDL:1988DB0F] super 4.01%
+[EDL:1988DB0F] super 4.65%
+[EDL:1988DB0F] super 5.29%
+[EDL:1988DB0F] super 5.94%
+[EDL:1988DB0F] super 6.58%
+[EDL:1988DB0F] super 7.22%
+[EDL:1988DB0F] super 7.86%
+[EDL:1988DB0F] super 8.50%
+[EDL:1988DB0F] super 9.14%
+[EDL:1988DB0F] super 9.79%
+[EDL:1988DB0F] super 10.43%
+[EDL:1988DB0F] super 11.07%
+[EDL:1988DB0F] super 11.71%
+[EDL:1988DB0F] super 12.35%
+[EDL:1988DB0F] super 12.99%
+[EDL:1988DB0F] super 13.64%
+[EDL:1988DB0F] super 14.28%
+[EDL:1988DB0F] super 14.92%
+[EDL:1988DB0F] super 15.56%
+[EDL:1988DB0F] super 16.20%
+[EDL:1988DB0F] super 16.84%
+[EDL:1988DB0F] super 17.49%
+[EDL:1988DB0F] super 18.13%
+[EDL:1988DB0F] super 18.77%
+[EDL:1988DB0F] super 19.41%
+[EDL:1988DB0F] super 20.05%
+[EDL:1988DB0F] super 20.69%
+[EDL:1988DB0F] super 21.34%
+[EDL:1988DB0F] super 21.98%
+[EDL:1988DB0F] super 22.62%
+[EDL:1988DB0F] super 23.26%
+[EDL:1988DB0F] super 23.90%
+[EDL:1988DB0F] super 24.54%
+[EDL:1988DB0F] super 25.19%
+[EDL:1988DB0F] super 25.83%
+[EDL:1988DB0F] super 26.47%
+[EDL:1988DB0F] super 27.11%
+[EDL:1988DB0F] super 27.75%
+[EDL:1988DB0F] super 28.39%
+[EDL:1988DB0F] super 29.03%
+[EDL:1988DB0F] super 29.68%
+[EDL:1988DB0F] super 30.32%
+[EDL:1988DB0F] super 30.96%
+[EDL:1988DB0F] super 31.60%
+[EDL:1988DB0F] super 32.24%
+[EDL:1988DB0F] super 32.88%
+[EDL:1988DB0F] super 33.53%
+[EDL:1988DB0F] super 34.17%
+[EDL:1988DB0F] super 34.81%
+[EDL:1988DB0F] super 35.45%
+[EDL:1988DB0F] super 36.09%
+[EDL:1988DB0F] super 36.73%
+[EDL:1988DB0F] super 37.38%
+[EDL:1988DB0F] super 38.02%
+[EDL:1988DB0F] super 38.66%
+[EDL:1988DB0F] super 39.30%
+[EDL:1988DB0F] super 39.94%
+[EDL:1988DB0F] super 40.58%
+[EDL:1988DB0F] super 41.23%
+[EDL:1988DB0F] super 41.87%
+[EDL:1988DB0F] super 42.51%
+[EDL:1988DB0F] super 43.15%
+[EDL:1988DB0F] super 43.79%
+[EDL:1988DB0F] super 44.43%
+[EDL:1988DB0F] super 45.08%
+[EDL:1988DB0F] super 45.72%
+[EDL:1988DB0F] super 46.36%
+[EDL:1988DB0F] super 47.00%
+[EDL:1988DB0F] super 47.64%
+[EDL:1988DB0F] super 48.28%
+[EDL:1988DB0F] super 48.93%
+[EDL:1988DB0F] super 49.57%
+[EDL:1988DB0F] super 50.21%
+[EDL:1988DB0F] super 50.85%
+[EDL:1988DB0F] super 51.49%
+[EDL:1988DB0F] super 52.13%
+[EDL:1988DB0F] super 52.78%
+[EDL:1988DB0F] super 53.42%
+[EDL:1988DB0F] super 54.06%
+[EDL:1988DB0F] super 54.70%
+[EDL:1988DB0F] super 55.34%
+[EDL:1988DB0F] super 55.98%
+[EDL:1988DB0F] super 56.63%
+[EDL:1988DB0F] super 57.27%
+[EDL:1988DB0F] super 57.91%
+[EDL:1988DB0F] super 58.55%
+[EDL:1988DB0F] super 59.19%
+[EDL:1988DB0F] super 59.83%
+[EDL:1988DB0F] super 60.48%
+[EDL:1988DB0F] super 61.12%
+[EDL:1988DB0F] super 61.76%
+[EDL:1988DB0F] super 62.40%
+[EDL:1988DB0F] super 63.04%
+[EDL:1988DB0F] super 63.68%
+[EDL:1988DB0F] super 64.33%
+[EDL:1988DB0F] super 64.97%
+[EDL:1988DB0F] super 65.61%
+[EDL:1988DB0F] super 66.25%
+[EDL:1988DB0F] super 66.89%
+[EDL:1988DB0F] super 67.53%
+[EDL:1988DB0F] super 68.18%
+[EDL:1988DB0F] super 68.82%
+[EDL:1988DB0F] super 69.46%
+[EDL:1988DB0F] super 70.10%
+[EDL:1988DB0F] super 70.74%
+[EDL:1988DB0F] super 71.38%
+[EDL:1988DB0F] super 72.03%
+[EDL:1988DB0F] super 72.67%
+[EDL:1988DB0F] super 73.31%
+[EDL:1988DB0F] super 73.95%
+[EDL:1988DB0F] super 74.59%
+[EDL:1988DB0F] super 75.23%
+[EDL:1988DB0F] super 75.88%
+[EDL:1988DB0F] super 76.52%
+[EDL:1988DB0F] super 77.16%
+[EDL:1988DB0F] super 77.80%
+[EDL:1988DB0F] super 78.44%
+[EDL:1988DB0F] super 79.08%
+[EDL:1988DB0F] super 79.73%
+[EDL:1988DB0F] super 80.37%
+[EDL:1988DB0F] super 81.01%
+[EDL:1988DB0F] super 81.65%
+[EDL:1988DB0F] super 82.29%
+[EDL:1988DB0F] super 82.93%
+[EDL:1988DB0F] super 83.58%
+[EDL:1988DB0F] super 84.22%
+[EDL:1988DB0F] super 84.86%
+[EDL:1988DB0F] super 85.50%
+[EDL:1988DB0F] super 86.14%
+[EDL:1988DB0F] super 86.78%
+[EDL:1988DB0F] super 87.43%
+[EDL:1988DB0F] super 88.07%
+[EDL:1988DB0F] super 88.71%
+[EDL:1988DB0F] super 89.35%
+[EDL:1988DB0F] super 89.99%
+[EDL:1988DB0F] super 90.63%
+[EDL:1988DB0F] super 91.28%
+[EDL:1988DB0F] super 91.92%
+[EDL:1988DB0F] super 92.56%
+[EDL:1988DB0F] super 93.20%
+[EDL:1988DB0F] super 93.84%
+[EDL:1988DB0F] super 94.48%
+[EDL:1988DB0F] super 95.13%
+[EDL:1988DB0F] super 95.77%
+[EDL:1988DB0F] super 96.41%
+[EDL:1988DB0F] super 97.05%
+[EDL:1988DB0F] super 97.69%
+[EDL:1988DB0F] super 98.33%
+[EDL:1988DB0F] super 98.98%
+[EDL:1988DB0F] super 99.62%
+[EDL:1988DB0F] flashed "super" successfully at 33597kB/s
+[EDL:1988DB0F] super 0.17%
+[EDL:1988DB0F] super 0.83%
+[EDL:1988DB0F] super 1.49%
+[EDL:1988DB0F] super 2.16%
+[EDL:1988DB0F] super 2.82%
+[EDL:1988DB0F] super 3.48%
+[EDL:1988DB0F] super 4.15%
+[EDL:1988DB0F] super 4.81%
+[EDL:1988DB0F] super 5.47%
+[EDL:1988DB0F] super 6.14%
+[EDL:1988DB0F] super 6.80%
+[EDL:1988DB0F] super 7.46%
+[EDL:1988DB0F] super 8.13%
+[EDL:1988DB0F] super 8.79%
+[EDL:1988DB0F] super 9.45%
+[EDL:1988DB0F] super 10.12%
+[EDL:1988DB0F] super 10.78%
+[EDL:1988DB0F] super 11.44%
+[EDL:1988DB0F] super 12.11%
+[EDL:1988DB0F] super 12.77%
+[EDL:1988DB0F] super 13.44%
+[EDL:1988DB0F] super 14.10%
+[EDL:1988DB0F] super 14.76%
+[EDL:1988DB0F] super 15.43%
+[EDL:1988DB0F] super 16.09%
+[EDL:1988DB0F] super 16.75%
+[EDL:1988DB0F] super 17.42%
+[EDL:1988DB0F] super 18.08%
+[EDL:1988DB0F] super 18.74%
+[EDL:1988DB0F] super 19.41%
+[EDL:1988DB0F] super 20.07%
+[EDL:1988DB0F] super 20.73%
+[EDL:1988DB0F] super 21.40%
+[EDL:1988DB0F] super 22.06%
+[EDL:1988DB0F] super 22.72%
+[EDL:1988DB0F] super 23.39%
+[EDL:1988DB0F] super 24.05%
+[EDL:1988DB0F] super 24.71%
+[EDL:1988DB0F] super 25.38%
+[EDL:1988DB0F] super 26.04%
+[EDL:1988DB0F] super 26.70%
+[EDL:1988DB0F] super 27.37%
+[EDL:1988DB0F] super 28.03%
+[EDL:1988DB0F] super 28.69%
+[EDL:1988DB0F] super 29.36%
+[EDL:1988DB0F] super 30.02%
+[EDL:1988DB0F] super 30.69%
+[EDL:1988DB0F] super 31.35%
+[EDL:1988DB0F] super 32.01%
+[EDL:1988DB0F] super 32.68%
+[EDL:1988DB0F] super 33.34%
+[EDL:1988DB0F] super 34.00%
+[EDL:1988DB0F] super 34.67%
+[EDL:1988DB0F] super 35.33%
+[EDL:1988DB0F] super 35.99%
+[EDL:1988DB0F] super 36.66%
+[EDL:1988DB0F] super 37.32%
+[EDL:1988DB0F] super 37.98%
+[EDL:1988DB0F] super 38.65%
+[EDL:1988DB0F] super 39.31%
+[EDL:1988DB0F] super 39.97%
+[EDL:1988DB0F] super 40.64%
+[EDL:1988DB0F] super 41.30%
+[EDL:1988DB0F] super 41.96%
+[EDL:1988DB0F] super 42.63%
+[EDL:1988DB0F] super 43.29%
+[EDL:1988DB0F] super 43.95%
+[EDL:1988DB0F] super 44.62%
+[EDL:1988DB0F] super 45.28%
+[EDL:1988DB0F] super 45.94%
+[EDL:1988DB0F] super 46.61%
+[EDL:1988DB0F] super 47.27%
+[EDL:1988DB0F] super 47.94%
+[EDL:1988DB0F] super 48.60%
+[EDL:1988DB0F] super 49.26%
+[EDL:1988DB0F] super 49.93%
+[EDL:1988DB0F] super 50.59%
+[EDL:1988DB0F] super 51.25%
+[EDL:1988DB0F] super 51.92%
+[EDL:1988DB0F] super 52.58%
+[EDL:1988DB0F] super 53.24%
+[EDL:1988DB0F] super 53.91%
+[EDL:1988DB0F] super 54.57%
+[EDL:1988DB0F] super 55.23%
+[EDL:1988DB0F] super 55.90%
+[EDL:1988DB0F] super 56.56%
+[EDL:1988DB0F] super 57.22%
+[EDL:1988DB0F] super 57.89%
+[EDL:1988DB0F] super 58.55%
+[EDL:1988DB0F] super 59.21%
+[EDL:1988DB0F] super 59.88%
+[EDL:1988DB0F] super 60.54%
+[EDL:1988DB0F] super 61.20%
+[EDL:1988DB0F] super 61.87%
+[EDL:1988DB0F] super 62.53%
+[EDL:1988DB0F] super 63.19%
+[EDL:1988DB0F] super 63.86%
+[EDL:1988DB0F] super 64.52%
+[EDL:1988DB0F] super 65.19%
+[EDL:1988DB0F] super 65.85%
+[EDL:1988DB0F] super 66.51%
+[EDL:1988DB0F] super 67.18%
+[EDL:1988DB0F] super 67.84%
+[EDL:1988DB0F] super 68.50%
+[EDL:1988DB0F] super 69.17%
+[EDL:1988DB0F] super 69.83%
+[EDL:1988DB0F] super 70.49%
+[EDL:1988DB0F] super 71.16%
+[EDL:1988DB0F] super 71.82%
+[EDL:1988DB0F] super 72.48%
+[EDL:1988DB0F] super 73.15%
+[EDL:1988DB0F] super 73.81%
+[EDL:1988DB0F] super 74.47%
+[EDL:1988DB0F] super 75.14%
+[EDL:1988DB0F] super 75.80%
+[EDL:1988DB0F] super 76.46%
+[EDL:1988DB0F] super 77.13%
+[EDL:1988DB0F] super 77.79%
+[EDL:1988DB0F] super 78.45%
+[EDL:1988DB0F] super 79.12%
+[EDL:1988DB0F] super 79.78%
+[EDL:1988DB0F] super 80.44%
+[EDL:1988DB0F] super 81.11%
+[EDL:1988DB0F] super 81.77%
+[EDL:1988DB0F] super 82.44%
+[EDL:1988DB0F] super 83.10%
+[EDL:1988DB0F] super 83.76%
+[EDL:1988DB0F] super 84.43%
+[EDL:1988DB0F] super 85.09%
+[EDL:1988DB0F] super 85.75%
+[EDL:1988DB0F] super 86.42%
+[EDL:1988DB0F] super 87.08%
+[EDL:1988DB0F] super 87.74%
+[EDL:1988DB0F] super 88.41%
+[EDL:1988DB0F] super 89.07%
+[EDL:1988DB0F] super 89.73%
+[EDL:1988DB0F] super 90.40%
+[EDL:1988DB0F] super 91.06%
+[EDL:1988DB0F] super 91.72%
+[EDL:1988DB0F] super 92.39%
+[EDL:1988DB0F] super 93.05%
+[EDL:1988DB0F] super 93.71%
+[EDL:1988DB0F] super 94.38%
+[EDL:1988DB0F] super 95.04%
+[EDL:1988DB0F] super 95.70%
+[EDL:1988DB0F] super 96.37%
+[EDL:1988DB0F] super 97.03%
+[EDL:1988DB0F] super 97.69%
+[EDL:1988DB0F] super 98.36%
+[EDL:1988DB0F] super 99.02%
+[EDL:1988DB0F] super 99.69%
+[EDL:1988DB0F] flashed "super" successfully at 34298kB/s
+[EDL:1988DB0F] super 1.52%
+[EDL:1988DB0F] super 7.58%
+[EDL:1988DB0F] super 13.65%
+[EDL:1988DB0F] super 19.71%
+[EDL:1988DB0F] super 25.78%
+[EDL:1988DB0F] super 31.84%
+[EDL:1988DB0F] super 37.91%
+[EDL:1988DB0F] super 43.98%
+[EDL:1988DB0F] super 50.04%
+[EDL:1988DB0F] super 56.11%
+[EDL:1988DB0F] super 62.17%
+[EDL:1988DB0F] super 68.24%
+[EDL:1988DB0F] super 74.30%
+[EDL:1988DB0F] super 80.37%
+[EDL:1988DB0F] super 86.44%
+[EDL:1988DB0F] super 92.50%
+[EDL:1988DB0F] super 98.57%
+[EDL:1988DB0F] flashed "super" successfully at 33764kB/s
+[EDL:1988DB0F] userdata 100.00%
+[EDL:1988DB0F] flashed "userdata" successfully
+[EDL:1988DB0F] userdata 45.96%
+[EDL:1988DB0F] flashed "userdata" successfully
+[EDL:1988DB0F] userdata 100.00%
+[EDL:1988DB0F] flashed "userdata" successfully
+[EDL:1988DB0F] userdata 100.00%
+[EDL:1988DB0F] flashed "userdata" successfully
+[EDL:1988DB0F] userdata 100.00%
+[EDL:1988DB0F] flashed "userdata" successfully
+[EDL:1988DB0F] userdata 100.00%
+[EDL:1988DB0F] flashed "userdata" successfully
+[EDL:1988DB0F] userdata 100.00%
+[EDL:1988DB0F] flashed "userdata" successfully
+[EDL:1988DB0F] userdata 100.00%
+[EDL:1988DB0F] flashed "userdata" successfully
+[EDL:1988DB0F] PrimaryGPT 100.00%
+[EDL:1988DB0F] flashed "PrimaryGPT" successfully
+[EDL:1988DB0F] BackupGPT 100.00%
+[EDL:1988DB0F] flashed "BackupGPT" successfully
+[EDL:1988DB0F] Applying patches 0.00%
+[EDL:1988DB0F] Applying patches 7.69%
+[EDL:1988DB0F] Applying patches 15.38%
+[EDL:1988DB0F] Applying patches 23.08%
+[EDL:1988DB0F] Applying patches 30.77%
+[EDL:1988DB0F] Applying patches 38.46%
+[EDL:1988DB0F] Applying patches 46.15%
+[EDL:1988DB0F] Applying patches 53.85%
+[EDL:1988DB0F] Applying patches 61.54%
+[EDL:1988DB0F] Applying patches 69.23%
+[EDL:1988DB0F] Applying patches 76.92%
+[EDL:1988DB0F] Applying patches 84.62%
+[EDL:1988DB0F] Applying patches 92.31%
+[EDL:1988DB0F] 13 patches applied
+[EDL:1988DB0F] partition 0 is now bootable
+--- Parallel Firmware Flash Report ---
+
+========================================
+       MULTI-DEVICE SESSION REPORT
+========================================
+Time: 2026-03-13 15:27:06
+----------------------------------------
+SN: 1988DB0F         | ✅ PASS | Firmware flashed successfully.
+----------------------------------------
+TOTAL: 1 | PASSED: 1 | FAILED: 0
+========================================
+Firmware Flash Elapsed Time: 00:02:35
+
+Parallel firmware flashing completed successfully. Total firmware flash time: 00:02:35.

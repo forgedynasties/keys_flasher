@@ -1,0 +1,13 @@
+{
+    "serial": "AT070AA2600038",
+    "status": "PASS",
+    "timestamp": "2026-03-27T17:29:26.497359",
+    "details": {
+        "message": "Keybox/CSR passed; User firmware: Firmware flashed successfully.",
+        "hw_serial": "2B8623CC",
+        "sw_serial": "AT070AA2600038",
+        "aio_serial": "AT070AA2600038",
+        "firmware_edl_serial": "2B8623CC",
+        "firmware_status": "PASS"
+    }
+}

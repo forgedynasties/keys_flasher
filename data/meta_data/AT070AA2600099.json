@@ -1,0 +1,14 @@
+{
+    "serial": "AT070AA2600099",
+    "status": "FAIL",
+    "timestamp": "2026-04-08T16:36:55.088571",
+    "details": {
+        "message": "Keybox/CSR passed; User firmware result could not be matched to this device.",
+        "hw_serial": "8D7804F7",
+        "sw_serial": "AT070AA2600099",
+        "aio_serial": "AT070AA2600099",
+        "firmware_edl_serial": "n/a",
+        "firmware_status": "FAIL",
+        "error": "Keybox/CSR passed; User firmware result could not be matched to this device."
+    }
+}

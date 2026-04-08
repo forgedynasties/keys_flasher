@@ -1,0 +1,13 @@
+{
+    "serial": "AT070AA2600041",
+    "status": "PASS",
+    "timestamp": "2026-03-27T18:50:39.237413",
+    "details": {
+        "message": "Keybox/CSR passed; User firmware: Firmware flashed successfully.",
+        "hw_serial": "C2A18B1E",
+        "sw_serial": "AT070AA2600041",
+        "aio_serial": "AT070AA2600041",
+        "firmware_edl_serial": "C2A18B1E",
+        "firmware_status": "PASS"
+    }
+}

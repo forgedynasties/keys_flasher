@@ -1,0 +1,21 @@
+There is sligh a change in the process the thing we want is that we need to 
+do this [rocesses on multiple devices
+for example
+8 devices are connected at a time reboot all the eight devices and check their serial numbers from adb devices 
+and generate keyboxes against each serial number if not present already
+then 
+in already existed window of process status 
+
+
+Under that create a new window of connecte devices in progress
+the device which is connected and process has not started yet for it 
+should be displayed with blue color mark
+the one which is under progress should be blinking 
+the one which is done should be green and the one which fails should be displayed in red
+and the already existing process should be done on the devices sequentially  one by one and at the end in Under the logs screen a final report should be displayed with meta data and meta data shouldd be also saved in the data/meta_data/
+with the serial number of each device
+like serial number process passed process failder
+the already existing Process status feature should be appenaded remove User Firmware done and add
+CSR pulled 
+whcih ever device is currently being processed serial number of that device should be displayed against or under the text Process status
+and all the connected device should be displayed under this Process Status window as mentioned earlier

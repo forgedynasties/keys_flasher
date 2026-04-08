@@ -1,0 +1,13 @@
+{
+    "serial": "AT070AA2600039",
+    "status": "PASS",
+    "timestamp": "2026-03-27T18:50:39.236945",
+    "details": {
+        "message": "Keybox/CSR passed; User firmware: Firmware flashed successfully.",
+        "hw_serial": "8B12A8D4",
+        "sw_serial": "AT070AA2600039",
+        "aio_serial": "AT070AA2600039",
+        "firmware_edl_serial": "8B12A8D4",
+        "firmware_status": "PASS"
+    }
+}

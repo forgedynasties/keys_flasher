@@ -1,0 +1,13 @@
+{
+    "serial": "AT070AA2600040",
+    "status": "PASS",
+    "timestamp": "2026-03-27T18:50:39.237275",
+    "details": {
+        "message": "Keybox/CSR passed; User firmware: Firmware flashed successfully.",
+        "hw_serial": "DD93F276",
+        "sw_serial": "AT070AA2600040",
+        "aio_serial": "AT070AA2600040",
+        "firmware_edl_serial": "DD93F276",
+        "firmware_status": "PASS"
+    }
+}

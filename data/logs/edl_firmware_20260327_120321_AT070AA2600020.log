@@ -1,0 +1,5 @@
+=== Session Log - 2026-03-27T12:03:21.978706 ===
+2026-03-27T12:03:21.979152 Initializing Parallel EDL Firmware Flash...
+2026-03-27T12:03:21.986858 
+--- Starting Parallel EDL Firmware Flashing Process ---
+2026-03-27T12:03:21.992514 Firmware directory not found: /home/flasher02/keys_flashing_tool/data/firmwares/A15-v1.50-user/qfil_download_emmc

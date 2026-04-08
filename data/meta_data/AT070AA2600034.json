@@ -1,0 +1,14 @@
+{
+    "serial": "AT070AA2600034",
+    "status": "FAIL",
+    "timestamp": "2026-03-27T17:29:26.496954",
+    "details": {
+        "message": "Keybox/CSR passed; User firmware: QDL flashing failed with return code: 1",
+        "hw_serial": "3D43FFB7",
+        "sw_serial": "AT070AA2600034",
+        "aio_serial": "AT070AA2600034",
+        "firmware_edl_serial": "3D43FFB7",
+        "firmware_status": "FAIL",
+        "error": "Keybox/CSR passed; User firmware: QDL flashing failed with return code: 1"
+    }
+}
