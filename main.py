@@ -1,13 +1,13 @@
 import sys
 import os
-from PyQt5.QtWidgets import QApplication
 
 # Ensure python path includes our packages
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from gui.main_window import MainWindow
-
 def main():
+    # Import AFTER env var is set so module-level DATA_ROOT in csr_utils/report_utils resolves correctly
+    from PyQt5.QtWidgets import QApplication
+    from gui.main_window import MainWindow
     startup_message = None
     data_root = os.environ.get("KEYS_FLASHER_DATA_ROOT")
     if not data_root:
@@ -48,11 +48,11 @@ def main():
     window.show()
 
     from PyQt5.QtCore import QTimer
-    from PyQt5.QtWidgets import QMessageBox
+    from PyQt5.QtWidgets import QMessageBox as _QMB
 
     delay = 200
     if startup_message:
-        QTimer.singleShot(delay, lambda: QMessageBox.information(window, "Data Directory Created", startup_message))
+        QTimer.singleShot(delay, lambda: _QMB.information(window, "Data Directory Created", startup_message))
         delay += 100
     if rkp_missing:
         rkp_msg = (
@@ -60,7 +60,7 @@ def main():
             f"CSR extraction will fail until the binary is placed at:\n"
             f"  {rkp_tool_path}"
         )
-        QTimer.singleShot(delay, lambda: QMessageBox.warning(window, "Missing: rkp_factory_extraction_tool", rkp_msg))
+        QTimer.singleShot(delay, lambda: _QMB.warning(window, "Missing: rkp_factory_extraction_tool", rkp_msg))
 
     sys.exit(app.exec_())
 
