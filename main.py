@@ -24,7 +24,9 @@ def main():
             f"Data directory created at:\n{desktop}\n\n"
             f"Fill these folders before flashing:\n"
             f"  {desktop}/firmwares/user/   ← firmware files (qdl runs here)\n"
-            f"  {desktop}/keyboxes/         ← keybox files"
+            f"  {desktop}/keyboxes/         ← keybox files\n\n"
+            f"CSRs will be saved to:\n"
+            f"  {desktop}/csrs/"
         )
         print(f"[INFO] KEYS_FLASHER_DATA_ROOT not set. Created data directory at:", flush=True)
         print(f"       {desktop}", flush=True)
@@ -32,6 +34,9 @@ def main():
         print("  Fill these folders before flashing:", flush=True)
         print(f"    {desktop}/firmwares/user/   <-- firmware files (qdl runs here)", flush=True)
         print(f"    {desktop}/keyboxes/         <-- keybox files", flush=True)
+        print("", flush=True)
+        print("  CSRs will be saved to:", flush=True)
+        print(f"    {desktop}/csrs/", flush=True)
         print("", flush=True)
 
     print(f"[ENV] KEYS_FLASHER_DATA_ROOT={data_root}", flush=True)
