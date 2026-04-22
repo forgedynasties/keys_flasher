@@ -1788,12 +1788,18 @@ class MainWindow(QWidget):
         avg = int(sum(self.parallel_device_progress.values()) / len(self.parallel_device_progress))
         self.progress.setValue(max(0, min(avg, 100)))
 
+    def _thread_is_running(self, thread):
+        try:
+            return thread.isRunning()
+        except RuntimeError:
+            return False
+
     def is_any_flasher_running(self):
-        single_running = hasattr(self, "flasher_thread") and self.flasher_thread.isRunning()
+        single_running = hasattr(self, "flasher_thread") and self._thread_is_running(self.flasher_thread)
         if single_running:
             return True
         for thread in self.parallel_flasher_threads.values():
-            if thread.isRunning():
+            if self._thread_is_running(thread):
                 return True
         return False
         
@@ -2880,29 +2886,29 @@ class MainWindow(QWidget):
 
     def abort_process(self):
         aborted = False
-        running_parallel = [thread for thread in self.parallel_flasher_threads.values() if thread.isRunning()]
+        running_parallel = [thread for thread in self.parallel_flasher_threads.values() if self._thread_is_running(thread)]
         if running_parallel:
             self.log_msg("🛑 Abort signal received! Attempting to halt parallel flashing...")
             for thread in running_parallel:
                 thread.abort()
             aborted = True
 
-        if hasattr(self, 'flasher_thread') and self.flasher_thread.isRunning():
+        if hasattr(self, 'flasher_thread') and self._thread_is_running(self.flasher_thread):
             self.log_msg("🛑 Abort signal received! Attempting to halt process...")
             self.flasher_thread.abort()
             aborted = True
-        
-        if hasattr(self, 'fw_thread') and self.fw_thread.isRunning():
+
+        if hasattr(self, 'fw_thread') and self._thread_is_running(self.fw_thread):
             self.log_msg("🛑 Abort signal received for EDL Flash!")
             self.fw_thread.abort()
             aborted = True
 
-        if hasattr(self, 'csr_thread') and self.csr_thread.isRunning():
+        if hasattr(self, 'csr_thread') and self._thread_is_running(self.csr_thread):
             self.log_msg("🛑 Abort signal received for CSR Extraction!")
             self.csr_thread.abort()
             aborted = True
 
-        if hasattr(self, 'keybox_thread') and self.keybox_thread.isRunning():
+        if hasattr(self, 'keybox_thread') and self._thread_is_running(self.keybox_thread):
             self.log_msg("🛑 Abort signal received for Keybox Installation!")
             self.keybox_thread.abort()
             aborted = True
