@@ -24,20 +24,14 @@ echo "[ENV] KEYS_FLASHER_ROOT=$KEYS_FLASHER_ROOT"
 echo "[ENV] KEYS_FLASHER_DATA_ROOT=$KEYS_FLASHER_DATA_ROOT"
 echo ""
 
-# -- Check dependencies --
-echo "[DEPS] Checking dependencies..."
+ERRORS=0
 
+# -- Check python3 --
 if ! command -v python3 &>/dev/null; then
-    echo "[FAIL] python3 not found. Install python3."
-    read -rp "Press Enter to exit..."
-    exit 1
-fi
-echo "  python3: $(python3 --version)"
-
-if ! command -v pip3 &>/dev/null && ! command -v pip &>/dev/null; then
-    echo "[WARN] pip not found. May not be able to install deps."
+    echo "[ERROR] python3 not found!"
+    ERRORS=$((ERRORS + 1))
 else
-    echo "  pip: $(pip3 --version 2>/dev/null || pip --version)"
+    echo "[OK] python3: $(python3 --version)"
 fi
 
 # -- Activate venv --
@@ -50,20 +44,27 @@ elif [[ -f "$WORKDIR/.venv/bin/activate" ]]; then
     echo "  Found: .venv/ (fallback)"
     source "$WORKDIR/.venv/bin/activate"
 else
-    echo "[WARN] No venv or .venv found. Running with system python."
+    echo "[ERROR] No venv or .venv found!"
+    ERRORS=$((ERRORS + 1))
 fi
 echo "  Python: $(which python3)"
-echo "  Version: $(python3 --version)"
 echo ""
 
-# -- Check PyQt5 --
-echo "[DEPS] Checking PyQt5..."
-if python3 -c "import PyQt5" 2>/dev/null; then
-    echo "  PyQt5: OK"
+# -- Check deps inside venv --
+if ! python3 -c "import PyQt5" 2>/dev/null; then
+    echo "[ERROR] PyQt5 not installed in venv!"
+    ERRORS=$((ERRORS + 1))
 else
-    echo "  PyQt5: MISSING - installing from requirements.txt..."
-    pip3 install -r "$WORKDIR/requirements.txt"
+    echo "[OK] PyQt5"
 fi
+
+if [[ $ERRORS -gt 0 ]]; then
+    echo ""
+    echo "[ABORT] $ERRORS error(s) found. Fix before running."
+    read -rp "Press Enter to close..."
+    exit 1
+fi
+
 echo ""
 
 # -- Ensure runtime dirs --

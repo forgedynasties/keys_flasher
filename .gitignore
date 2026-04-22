@@ -10,3 +10,4 @@ build/
 deb_package/
 dist/
 venv/
+__pycache__
