@@ -835,7 +835,7 @@ class FirmwareFlasherThread(QThread):
         ]
         self.app_root = get_app_root()
         self.data_root = get_data_root()
-        self.firmware_dir = os.path.join(self.data_root, "firmwares", "A15-v1.50-user", "qfil_download_emmc")
+        self.firmware_dir = os.path.join(self.data_root, "firmwares", "user")
         self._is_aborted = False
         self._progress_lock = threading.Lock()
         self._device_progress = {}
@@ -1302,6 +1302,16 @@ class MainWindow(QWidget):
         # Manual flash is triggered by clicking the Connected Devices area.
         
         main_layout.addLayout(header_layout)
+        main_layout.addWidget(self.create_separator())
+
+        # --- Readiness Banner ---
+        self.readiness_label = QLabel()
+        self.readiness_label.setFont(QFont("Consolas", 9))
+        self.readiness_label.setWordWrap(True)
+        self.readiness_label.setContentsMargins(6, 4, 6, 4)
+        main_layout.addWidget(self.readiness_label)
+        self._refresh_readiness_banner()
+
         main_layout.addWidget(self.create_separator())
 
         # --- Action Section ---
@@ -1787,6 +1797,43 @@ class MainWindow(QWidget):
             return
         avg = int(sum(self.parallel_device_progress.values()) / len(self.parallel_device_progress))
         self.progress.setValue(max(0, min(avg, 100)))
+
+    def _readiness_issues(self):
+        issues = []
+        firmware_dir = os.path.join(self.data_root, "firmwares", "user")
+        keybox_dir = os.path.join(self.data_root, "keyboxes")
+        rkp_path = os.path.join(self.data_root, "rkp_factory_extraction_tool")
+        if not os.path.isdir(firmware_dir) or not any(os.scandir(firmware_dir)):
+            issues.append("User firmware missing  (firmwares/user/)")
+        if not os.path.isdir(keybox_dir) or not any(os.scandir(keybox_dir)):
+            issues.append("Keyboxes missing  (keyboxes/)")
+        if not os.path.isfile(rkp_path):
+            issues.append("rkp_factory_extraction_tool binary missing")
+        return issues
+
+    def _refresh_readiness_banner(self):
+        issues = self._readiness_issues()
+        if not issues:
+            self.readiness_label.setText("✔  Application Ready")
+            self.readiness_label.setStyleSheet(
+                "color: #2e7d32; background-color: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 4px;"
+            )
+        else:
+            lines = "  |  ".join(issues)
+            self.readiness_label.setText(f"⚠  Not ready: {lines}")
+            self.readiness_label.setStyleSheet(
+                "color: #7f4f00; background-color: #fff8e1; border: 1px solid #ffe082; border-radius: 4px;"
+            )
+
+    def _data_folders_ready(self):
+        issues = self._readiness_issues()
+        if issues:
+            QMessageBox.warning(
+                self, "Not Ready",
+                "Cannot start — fix the following:\n\n" + "\n".join(f"• {i}" for i in issues)
+            )
+            return False
+        return True
 
     def _thread_is_running(self, thread):
         try:
@@ -2274,6 +2321,8 @@ class MainWindow(QWidget):
         self.status_table_row_map = {}
 
     def start_process(self):
+        if not self._data_folders_ready():
+            return
         adb_devices = get_adb_devices_with_usb()[:8]
         serials = [device["serial"] for device in adb_devices]
         if not serials:
@@ -2612,6 +2661,8 @@ class MainWindow(QWidget):
         return combined_results, unmatched_firmware
 
     def start_edl_flash(self, checked=False, adb_targets=None, edl_targets=None):
+        if not self._data_folders_ready():
+            return
         if hasattr(self, "fw_thread") and self.fw_thread.isRunning():
             QMessageBox.warning(self, "Busy", "Firmware flashing is already in progress.")
             return
@@ -2696,6 +2747,9 @@ class MainWindow(QWidget):
 
         if not adb_targets and not edl_targets:
             QMessageBox.information(self, "No Selection", "Please select one or more devices to flash.")
+            return
+
+        if not self._data_folders_ready():
             return
 
         # start flashing only the selected devices

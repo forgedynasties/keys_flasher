@@ -10,7 +10,6 @@ set -e
 WORKDIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$WORKDIR"
 
-# -- Set env vars --
 export KEYS_FLASHER_ROOT="$WORKDIR"
 export KEYS_FLASHER_DATA_ROOT="$WORKDIR/data"
 
